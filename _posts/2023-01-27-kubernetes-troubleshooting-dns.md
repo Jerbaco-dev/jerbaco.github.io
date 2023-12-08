@@ -1,11 +1,10 @@
 ---
 layout: post
-title: The easy (and nice) way to do CLI apps in Python
+title: Kubernetes Troubleshooting DNS
 categories: [Blog, Kubernetes]
 tags: [AKS]
 ---
 
-# Kubernetes troubleshooting
 ## Troubleshooting DNS issues
 There are a few ways to check the DNS settings of your Kubernetes (K8s) cluster:
 
