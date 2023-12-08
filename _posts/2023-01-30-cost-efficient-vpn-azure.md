@@ -3,6 +3,7 @@ layout: post
 title: Cost Efficient VPN in Azure
 categories: [Blog, Azure]
 tags: [VPN, Azure, Costs]
+toc: true
 ---
 
 # Cost Efficient VPN in Azure 

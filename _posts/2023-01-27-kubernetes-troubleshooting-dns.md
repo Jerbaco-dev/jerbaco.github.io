@@ -3,6 +3,7 @@ layout: post
 title: Kubernetes Troubleshooting DNS
 categories: [Blog, Kubernetes]
 tags: [AKS]
+toc: true
 ---
 
 ## Troubleshooting DNS issues
