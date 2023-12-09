@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Jeroen B
+author: Jeroen
 title: Schedule AKS clusters to run during Business Hours
 categories: [Blog, Azure]
 tags: [AKS, Azure, Costs]
