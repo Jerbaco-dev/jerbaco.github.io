@@ -1,7 +1,6 @@
 ---
 layout: post
 author: Jeroen B
-date: 2023-12-09 10:00:00 +0100
 title: Schedule AKS clusters to run during Business Hours
 categories: [Blog, Azure]
 tags: [AKS, Azure, Costs]
