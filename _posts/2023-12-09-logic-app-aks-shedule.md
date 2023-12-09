@@ -21,11 +21,11 @@ I will use a low code Logic App approach to shutdown and startup the AKS cluster
 
 ## Starting with the start of a cluster
 1. Creating a Logic App like I did in my Azure environment **(comsumption based)**   
-   ![img-description](/assets/img/blogs/logic-app-1.png)
+   ![img-description](assets/img/blogs/logic-app-1.png) 
 
 2. Adding the tag to the AKS Cluster   
    
-   ![img-description](/assets/img/blogs/aks-tagging.png)
+   ![img-description](assets/img/blogs/aks-tagging.png)
 
 3. Starting with the creationg of the flow in the Logic App.
 
@@ -34,7 +34,7 @@ Adding some reccurence action to the logic app to make sure it will start before
 
 1. Start with a schedule action and list all the resources from a subscription   
 
-![step 1 for Logic App Flow](/assets/img/blogs/la-step-1.png)
+![step 1 for Logic App Flow](assets/img/blogs/la-step-1.png)
 
 2. Extract the correct tags from the payload
   ``` json
@@ -90,13 +90,13 @@ Adding some reccurence action to the logic app to make sure it will start before
 }
   ```
 
-![step 1 for Logic App Flow](/assets/img/blogs/la-step-2.png)
+![step 1 for Logic App Flow](assets/img/blogs/la-step-2.png)
 
 
 3. Now, we got all the resources that are tagged with Business, so they need to run only during business hours.  
    Let's start these AKS clusters with a Foreach.  
 
-![Last step from the flow](/assets/img/blogs/la-step-3.png)
+![Last step from the flow](assets/img/blogs/la-step-3.png)
 
 Here you can find the code for the split function!
 ```
@@ -107,7 +107,7 @@ split(outputs('Get_resource_Id'),'/')[4]
 ## Shutdown a AKS cluster after Business Hours
 For the shutdown it's the same flow only the last part is different.   
 
-![Shutdown a cluster](/assets/img/blogs/la-step-4.png)
+![Shutdown a cluster](assets/img/blogs/la-step-4.png)
 
 
 ## Conlusion
